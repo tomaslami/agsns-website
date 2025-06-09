@@ -51,10 +51,10 @@ export default function ServicesSection() {
           </p>
         </div>
 
-        <div className="flex justify-between items-stretch w-full gap-6 mb-6">
-          <div className="bg-white p-8 rounded-lg shadow-sm relative min-h-[400px] w-2/3 flex flex-col">
+        <div className="flex flex-col md:flex-row justify-between items-stretch w-full gap-6 mb-6">
+          <div className="bg-white p-8 rounded-lg shadow-sm relative min-h-[400px] w-full md:w-2/3 flex flex-col">
             <h3 className="text-lg font-semibold text-gray-900 mb-3">{services[0].title}</h3>
-            <p className="text-gray-600 text-sm leading-relaxed mb-12 w-1/2">{services[0].description}</p>
+            <p className="text-gray-600 text-sm leading-relaxed mb-12 w-full md:w-1/2">{services[0].description}</p>
             <div className="absolute bottom-0 right-0 p-8">
               <div className="w-72 h-72">
                 <Image
@@ -62,13 +62,13 @@ export default function ServicesSection() {
                   alt=""
                   width={192}
                   height={192}
-                  className="w-full h-full object-contain "
+                  className="w-full h-full object-contain hidden md:block"
                 />
               </div>
             </div>
           </div>
 
-          <div className="bg-white p-8 rounded-lg shadow-sm relative w-1/3 min-h-[400px] flex flex-col">
+          <div className="bg-white p-8 rounded-lg shadow-sm relative w-full md:w-1/3 min-h-[400px] flex flex-col">
             <h3 className="text-lg font-semibold text-gray-900 mb-3">{services[1].title}</h3>
             <p className="text-gray-600 text-sm leading-relaxed mb-12">{services[1].description}</p>
             <div className="flex flex-1 items-center justify-center">

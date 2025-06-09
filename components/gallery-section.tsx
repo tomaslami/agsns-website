@@ -74,10 +74,10 @@ export default function GallerySection() {
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselPrevious className="absolute left-2 sm:left-4 lg:-left-12 xl:-left-16 top-1/2 -translate-y-1/2 bg-transparent border-none text-white hover:text-[#B08D57] disabled:text-gray-500 h-10 w-10 sm:h-12 sm:w-12">
+            <CarouselPrevious className="hidden md:block absolute left-2 sm:left-4 lg:-left-12 xl:-left-16 top-1/2 -translate-y-1/2 bg-transparent border-none text-white hover:text-[#B08D57] disabled:text-gray-500 h-10 w-10 sm:h-12 sm:w-12">
               <ArrowLeft size={24} className="sm:w-8 sm:h-8" />
             </CarouselPrevious>
-            <CarouselNext className="absolute right-2 sm:right-4 lg:-right-12 xl:-right-16 top-1/2 -translate-y-1/2 bg-transparent border-none text-white hover:text-[#B08D57] disabled:text-gray-500 h-10 w-10 sm:h-12 sm:w-12">
+            <CarouselNext className="hidden md:block absolute right-2 sm:right-4 lg:-right-12 xl:-right-16 top-1/2 -translate-y-1/2 bg-transparent border-none text-white hover:text-[#B08D57] disabled:text-gray-500 h-10 w-10 sm:h-12 sm:w-12">
               <ArrowRight size={24} className="sm:w-8 sm:h-8" />
             </CarouselNext>
           </Carousel>
