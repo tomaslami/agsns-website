@@ -69,40 +69,44 @@ export default function Header() {
 
       {/* Mobile Navigation */}
       {isMenuOpen && (
-        <div className="lg:hidden absolute top-full left-0 right-0 bg-[#252320] border-t border-gray-600 shadow-lg transition-all duration-300 ease-in-out overflow-hidden transform" style={{ maxHeight: isMenuOpen ? '100vh' : '0' }}>
-          <nav className="container mx-auto px-4 py-4 space-y-4">
-            <Link
-              href="#inicio"
-              className="block text-base font-medium text-white hover:text-gray-300 transition-colors py-2"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Inicio
+        <div
+        className={`lg:hidden absolute top-full left-0 right-0 bg-[#252320] border-t border-gray-600 shadow-lg transition-all duration-300 ease-in-out transform ${
+          isMenuOpen ? "opacity-100 translate-y-0 visible" : "opacity-0 -translate-y-4 invisible"
+        }`}
+      >
+        <nav className="container mx-auto px-4 py-4 space-y-4 transition-all duration-200 ease-in-out">
+          <Link
+            href="#inicio"
+            className="block text-base font-medium text-white hover:text-gray-300 transition-all duration-200 ease-in-out py-2 transform hover:translate-x-2"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            Inicio
+          </Link>
+          <Link
+            href="#sobre-nosotros"
+            className="block text-base font-medium text-white hover:text-gray-300 transition-all duration-200 ease-in-out py-2 transform hover:translate-x-2"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            Sobre Nosotros
+          </Link>
+          <Link
+            href="#galeria"
+            className="block text-base font-medium text-white hover:text-gray-300 transition-all duration-200 ease-in-out py-2 transform hover:translate-x-2"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            Galería
+          </Link>
+          <Button
+            variant="default"
+            className="w-full bg-[#B08D57] hover:bg-[#a07d47] text-white text-base px-4 py-3 rounded-md mt-4"
+            asChild
+          >
+            <Link href="#contacto" onClick={() => setIsMenuOpen(false)}>
+              Contactarme <Image src="/ArrowUpRight.png" alt="Arrow" width={16} height={16} className="ml-2" />
             </Link>
-            <Link
-              href="#sobre-nosotros"
-              className="block text-base font-medium text-white hover:text-gray-300 transition-colors py-2"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Sobre Nosotros
-            </Link>
-            <Link
-              href="#galeria"
-              className="block text-base font-medium text-white hover:text-gray-300 transition-colors py-2"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Galería
-            </Link>
-            <Button
-              variant="default"
-              className="w-full bg-[#B08D57] hover:bg-[#a07d47] text-white text-base px-4 py-3 rounded-md mt-4"
-              asChild
-            >
-              <Link href="#contacto" onClick={() => setIsMenuOpen(false)}>
-                Contactarme <Image src="/ArrowUpRight.png" alt="Arrow" width={16} height={16} className="ml-2" />
-              </Link>
-            </Button>
-          </nav>
-        </div>
+          </Button>
+        </nav>
+      </div>
       )}
     </header>
   )
