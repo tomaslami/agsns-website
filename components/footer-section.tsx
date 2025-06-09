@@ -24,11 +24,11 @@ export default function Footer() {
               excepcionales.
             </p>
             <div className="flex space-x-4 sm:space-x-6">
-              <Link href="#" className="text-white hover:text-[#B08D57] transition-colors">
+              <Link href="https://www.instagram.com/recubrimientosmetalicosagsns?utm_source=qr&igsh=bGVmemt1aDd6ZWJy" className="text-white hover:text-[#B08D57] transition-colors">
                 <Instagram size={20} className="sm:w-6 sm:h-6" />
                 <span className="sr-only">Instagram</span>
               </Link>
-              <Link href="#" className="text-white hover:text-[#B08D57] transition-colors">
+              <Link href="https://www.facebook.com/share/1AhMiNaqLo/" className="text-white hover:text-[#B08D57] transition-colors">
                 <Facebook size={20} className="sm:w-6 sm:h-6" />
                 <span className="sr-only">Facebook</span>
               </Link>
@@ -83,7 +83,7 @@ export default function Footer() {
               </li>
               <li className="flex items-start">
                 <MailIcon size={16} className="mr-3 mt-1 text-[#B08D57] flex-shrink-0 sm:w-5 sm:h-5" />
-                <span className="text-white break-all">galvanoTG.electrolitico@gmail.com</span>
+                <span className="text-white break-all">galvano76.electrolitico@gmail.com</span>
               </li>
               <li className="flex items-start">
                 <MapPin size={16} className="mr-3 mt-1 text-[#B08D57] flex-shrink-0 sm:w-5 sm:h-5" />
