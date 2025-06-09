@@ -1,6 +1,7 @@
 import type React from "react"
 import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
+import FloatingWhatsAppButton from "@/components/floating-whatsapp-button"
 
 export const metadata = {
   title: "AGSNS - Recubrimientos Metálicos",
@@ -28,6 +29,10 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
           {children}
         </ThemeProvider>
+        <FloatingWhatsAppButton
+        phoneNumber="+541126968368"
+        message="Hola!! Estoy interesado/a en sus servicios."
+      />
       </body>
     </html>
   )
