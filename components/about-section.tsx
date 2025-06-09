@@ -7,30 +7,30 @@ const services = [
     title: "Sobre nosotros",
     description:
       "Recubrimientos metálicos agsns nace en el 2010 ofreciendo una variedad de productos de bañados galvánicos diseñados para satisfacer las necesidades de pequeñas empresas y talleres que buscan agregar valor y durabilidad a sus productos. Nuestras formulaciones están para proporcionar resultados óptimos y consistentes en una variedad de aplicaciones.",
-    icon: "/images/Users.png",
+    icon: "/icons/Users.png",
   },
   {
     title: "Sistemas compactos",
     description:
       "Mini sistemas de baño galvánico con agitación catódica o formatos estáticos, ideales para espacios reducidos y producción controlada.",
-    icon: "/images/Lightning.png",
+    icon: "/icons/Lightning.png",
   },
   {
     title: "Alta pureza",
     description:
       "Formulaciones con ingredientes de gran pureza que garantizan acabados confiables, estables y de alta calidad.",
-    icon: "/images/Medal.png",
+    icon: "/icons/Medal.png",
   },
   {
     title: "Seguridad",
     description:
       "Productos seguros y fáciles de usar, con instrucciones claras que minimizan riesgos y optimizan la aplicación.",
-    icon: "/images/ShieldCheck.png",
+    icon: "/icons/ShieldCheck.png",
   },
   {
     title: "Formación internacional",
     description: "Tutoriales y recursos educativos sobre galvanoplastia, pensados especialmente para el exterior.",
-    icon: "/images/GraduationCap.png",
+    icon: "/icons/GraduationCap.png",
   },
 ]
 

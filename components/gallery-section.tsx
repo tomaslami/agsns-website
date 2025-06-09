@@ -14,11 +14,23 @@ import {
 import { ArrowLeft, ArrowRight } from "lucide-react"
 
 const galleryImages = [
-  { src: "/placeholder.svg?width=1200&height=600", alt: "Proceso de recubrimiento metálico 1" },
-  { src: "/placeholder.svg?width=1200&height=600", alt: "Joyería con galvanoplastia" },
-  { src: "/placeholder.svg?width=1200&height=600", alt: "Acabado metálico detallado" },
-  { src: "/placeholder.svg?width=1200&height=600", alt: "Taller de orfebrería" },
-  { src: "/placeholder.svg?width=1200&height=600", alt: "Equipo de recubrimiento de precisión" },
+  { src: "/images/feature-1.jpg", alt: "Proceso de recubrimiento metálico 1" },
+  { src: "/images/feature-2.jpg", alt: "Joyería con galvanoplastia" },
+  { src: "/images/feature-3.jpg", alt: "Acabado metálico detallado" },
+  { src: "/images/feature-4.jpg", alt: "Taller de orfebrería" },
+  { src: "/images/feature-5.jpg", alt: "Equipo de recubrimiento de precisión" },
+  { src: "/images/feature-6.jpg", alt: "Galvanoplastia de piezas" },
+  { src: "/images/feature-7.jpg", alt: "Pulido de metales" },
+  { src: "/images/feature-8.jpg", alt: "Control de calidad" },
+  { src: "/images/feature-9.jpg", alt: "Baño de recubrimiento" },
+  { src: "/images/feature-10.jpg", alt: "Trabajo artesanal" },
+  { src: "/images/feature-11.jpg", alt: "Detailado de piezas" },
+  { src: "/images/feature-12.jpg", alt: "Proceso químico" },
+  { src: "/images/feature-13.jpg", alt: "Recubrimiento de joyas" },
+  { src: "/images/feature-14.jpg", alt: "Piezas en baño" },
+  { src: "/images/feature-15.jpg", alt: "Recubrimiento de componentes" },
+  { src: "/images/feature-16.jpg", alt: "Inspección de calidad" },
+  { src: "/images/feature-17.jpg", alt: "Recubrimiento especializado" },
 ]
 
 export default function GallerySection() {
@@ -66,7 +78,7 @@ export default function GallerySection() {
                         alt={image.alt}
                         width={1200}
                         height={600}
-                        className="object-cover w-full h-full rounded-lg"
+                        className="object-contain w-full h-full rounded-lg"
                         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 90vw, 80vw"
                       />
                     </CardContent>
@@ -74,25 +86,13 @@ export default function GallerySection() {
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselPrevious className="hidden md:block absolute left-2 sm:left-4 lg:-left-12 xl:-left-16 top-1/2 -translate-y-1/2 bg-transparent border-none text-white hover:text-[#B08D57] disabled:text-gray-500 h-10 w-10 sm:h-12 sm:w-12">
+            <CarouselPrevious className="hidden md:block absolute left-2 sm:left-4 lg:-left-12 xl:-left-16 top-1/2 -translate-y-1/2 bg-transparent border-none text-gray-500 hover:text-[#B08D57] hover:bg-transparent h-10 w-10 sm:h-12 sm:w-12">
               <ArrowLeft size={24} className="sm:w-8 sm:h-8" />
             </CarouselPrevious>
-            <CarouselNext className="hidden md:block absolute right-2 sm:right-4 lg:-right-12 xl:-right-16 top-1/2 -translate-y-1/2 bg-transparent border-none text-white hover:text-[#B08D57] disabled:text-gray-500 h-10 w-10 sm:h-12 sm:w-12">
+            <CarouselNext className="hidden md:block absolute right-2 sm:right-4 lg:-right-12 xl:-right-16 top-1/2 -translate-y-1/2 bg-transparent border-none text-gray-500 hover:text-[#B08D57] hover:bg-transparent h-10 w-10 sm:h-12 sm:w-12">
               <ArrowRight size={24} className="sm:w-8 sm:h-8" />
             </CarouselNext>
           </Carousel>
-          <div className="py-4 sm:py-6 text-center text-sm text-muted-foreground mt-4 sm:mt-6">
-            {Array.from({ length: count }).map((_, index) => (
-              <button
-                key={index}
-                onClick={() => api?.scrollTo(index)}
-                className={`h-2 w-2 sm:h-3 sm:w-3 rounded-full mx-1 sm:mx-2 ${
-                  index === current - 1 ? "bg-[#B08D57] scale-125" : "bg-gray-500"
-                } transition-all`}
-                aria-label={`Ir a la imagen ${index + 1}`}
-              />
-            ))}
-          </div>
         </div>
       </div>
     </section>
