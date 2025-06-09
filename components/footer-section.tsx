@@ -104,8 +104,8 @@ export default function Footer() {
           <p>&copy; {new Date().getFullYear()} Recubrimientos AGSNS. Todos los derechos reservados.</p>
           <p className="mt-1 sm:mt-2">
             Desarrollado por{" "}
-            <Link href="#" className="text-[#B08D57] hover:underline">
-              Synero
+            <Link href="https://synera.com.ar" className="text-[#B08D57] hover:underline">
+              Synera
             </Link>
           </p>
         </div>

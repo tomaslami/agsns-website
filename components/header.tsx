@@ -60,7 +60,7 @@ export default function Header() {
         {/* Mobile Menu Button */}
         <button
           onClick={toggleMenu}
-          className="lg:hidden text-white hover:text-gray-300 transition-colors p-2"
+          className="lg:hidden text-[#B08D57] hover:text-[#a07d47] transition-colors p-2"
           aria-label="Toggle menu"
         >
           {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -69,7 +69,7 @@ export default function Header() {
 
       {/* Mobile Navigation */}
       {isMenuOpen && (
-        <div className="lg:hidden absolute top-full left-0 right-0 bg-[#252320] border-t border-gray-600 shadow-lg">
+        <div className="lg:hidden absolute top-full left-0 right-0 bg-[#252320] border-t border-gray-600 shadow-lg transition-all duration-300 ease-in-out overflow-hidden transform" style={{ maxHeight: isMenuOpen ? '100vh' : '0' }}>
           <nav className="container mx-auto px-4 py-4 space-y-4">
             <Link
               href="#inicio"
