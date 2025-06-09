@@ -29,14 +29,14 @@ export default function HeroSection() {
           Durabilidad, estética y seguridad técnica en cada producto
         </p>
         <Button
-          variant="default"
-          className="bg-[#B08D57] hover:bg-[#a07d47] text-white text-base sm:text-lg px-6 sm:px-8  py-3 sm:py-4 lg:py-5 rounded-md font-medium"
-          asChild
-        >
-          <Link href="#contacto">
-            Contáctanos <Image src="/ArrowUpRight.png" alt="Arrow" width={24} height={24} className="ml-2 w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6" />
-          </Link>
-        </Button>
+            variant="default"
+            className="bg-[#B08D57] hover:bg-[#a07d47] text-white text-sm xl:text-base px-4 py-2 rounded-md"
+            asChild
+          >
+            <Link href="#contacto" >
+              Contáctanos <Image src="/ArrowUpRight.png" alt="Arrow" width={16} height={16} className="ml-2" />
+            </Link>
+          </Button>
       </div>
     </section>
   )

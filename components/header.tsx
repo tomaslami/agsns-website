@@ -51,8 +51,8 @@ export default function Header() {
             className="bg-[#B08D57] hover:bg-[#a07d47] text-white text-sm xl:text-base px-4 py-2 rounded-md"
             asChild
           >
-            <Link href="#contacto">
-              Contactarme <Image src="/ArrowUpRight.png" alt="Arrow" width={16} height={16} className="ml-2" />
+            <Link href="#contacto" >
+              Contáctanos <Image src="/ArrowUpRight.png" alt="Arrow" width={16} height={16} className="ml-2" />
             </Link>
           </Button>
         </nav>
@@ -102,7 +102,7 @@ export default function Header() {
             asChild
           >
             <Link href="#contacto" onClick={() => setIsMenuOpen(false)}>
-              Contactarme <Image src="/ArrowUpRight.png" alt="Arrow" width={16} height={16} className="ml-2" />
+              Contáctanos <Image src="/ArrowUpRight.png" alt="Arrow" width={16} height={16} className="ml-2" />
             </Link>
           </Button>
         </nav>

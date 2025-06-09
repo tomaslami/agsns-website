@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
+import Link from "next/link"
 
 const services = [
   {
@@ -106,9 +107,14 @@ export default function ServicesSection() {
         </div>
 
         <div className="text-center">
-          <Button className="bg-[#B08D57] hover:bg-[#a07d47] text-white px-6 py-2 rounded-md font-medium text-sm">
-            Contáctanos
-            <Image src="/ArrowUpRight.png" alt="Arrow" width={16} height={16} className="ml-2" />
+        <Button
+            variant="default"
+            className="bg-[#B08D57] hover:bg-[#a07d47] text-white text-sm xl:text-base px-4 py-2 rounded-md"
+            asChild
+          >
+            <Link href="#contacto" >
+              Contáctanos <Image src="/ArrowUpRight.png" alt="Arrow" width={16} height={16} className="ml-2" />
+            </Link>
           </Button>
         </div>
       </div>
