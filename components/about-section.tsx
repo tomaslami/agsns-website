@@ -35,7 +35,7 @@ const services = [
 
 export default function ServicesSection() {
   return (
-    <section id="servicios" className="py-12 bg-[#F2ECDF] scroll-m-10">
+    <section id="sobre-nosotros" className="py-12 bg-[#F2ECDF] scroll-m-10">
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="mb-8">
           <span className="inline-block bg-[#B08D57] text-white px-4 py-1 rounded-full text-sm font-medium mb-4">
