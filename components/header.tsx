@@ -15,7 +15,7 @@ export default function Header() {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 py-3 sm:py-4 px-4 sm:px-6 lg:px-8 bg-[#252320] shadow-lg">
-      <div className="container mx-auto flex items-center justify-between">
+      <div className="container mx-auto px-4 max-w-7xl flex items-center justify-between">
         <Link href="/" className="flex items-center">
           <Image
             src="/agsns-logo.png"

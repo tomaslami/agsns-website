@@ -15,7 +15,7 @@ export default function ContactSection() {
 
   return (
     <section id="contacto" className="py-10 sm:py-14 md:py-16 lg:py-20 xl:py-24 bg-[#F2ECDF]">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
         <div className="text-left mb-6 sm:mb-8 lg:mb-12">
           <span className="inline-block bg-[#B08D57] text-white text-xs sm:text-sm font-semibold px-3 sm:px-4 py-1 sm:py-2 rounded-full mb-2 sm:mb-3">
             Contacto
