@@ -1,6 +1,5 @@
 "use client"
-
-import { MessageCircle } from "lucide-react"
+import Image from "next/image"
 import Link from "next/link"
 
 interface FloatingWhatsAppButtonProps {
@@ -16,10 +15,10 @@ export default function FloatingWhatsAppButton({ phoneNumber, message }: Floatin
       href={whatsappLink}
       target="_blank"
       rel="noopener noreferrer"
-      className="fixed bottom-6 right-6 bg-[#B08D57] text-white p-4 rounded-full shadow-lg hover:bg-groppa-green/90 transition-colors duration-300 z-50 flex items-center justify-center"
+      className="fixed bottom-6 right-6 bg-[#B08D57] text-white p-2 rounded-full shadow-lg hover:bg-groppa-green/90 transition-colors duration-300 z-50 flex items-center justify-center"
       aria-label="Contactar por WhatsApp"
     >
-      <MessageCircle size={28} />
+      <Image src="/icons/wpp_icon.png" alt="WhatsApp Logo" width={38} height={38} />
     </Link>
   )
 }
