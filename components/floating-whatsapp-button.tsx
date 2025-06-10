@@ -22,8 +22,3 @@ export default function FloatingWhatsAppButton({ phoneNumber, message }: Floatin
     </Link>
   )
 }
-
-FloatingWhatsAppButton.defaultProps = {
-  phoneNumber: "+1234567890", // Default placeholder
-  message: "Hola!! Estoy interesado/a en sus servicios.",
-}
