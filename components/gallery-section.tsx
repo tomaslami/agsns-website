@@ -31,6 +31,9 @@ const galleryImages = [
   { src: "/images/feature-15.jpg", alt: "Recubrimiento de componentes" },
   { src: "/images/feature-16.jpg", alt: "Inspección de calidad" },
   { src: "/images/feature-17.jpg", alt: "Recubrimiento especializado" },
+  { src: "/images/feature-18.mp4", alt: "Proceso de recubrimiento en video", type: "video" },
+  { src: "/images/feature-19.jpg", alt: "Detalle de acabado metálico" },
+  { src: "/images/feature-20.jpg", alt: "Proceso de galvanoplastia" },
 ]
 
 export default function GallerySection() {
@@ -73,14 +76,25 @@ export default function GallerySection() {
                 <CarouselItem key={index}>
                   <Card className="bg-gray-300 border-none">
                     <CardContent className="flex aspect-[16/9] sm:aspect-[2/1] items-center justify-center p-0">
-                      <Image
-                        src={image.src || "/placeholder.svg"}
-                        alt={image.alt}
-                        width={1200}
-                        height={600}
-                        className="object-contain w-full h-full rounded-lg"
-                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 90vw, 80vw"
-                      />
+                      {image.type === "video" ? (
+                        <video
+                          src={image.src}
+                          controls
+                          className="w-full h-full object-contain rounded-lg"
+                          playsInline
+                        >
+                          Tu navegador no soporta el elemento de video.
+                        </video>
+                      ) : (
+                        <Image
+                          src={image.src}
+                          alt={image.alt}
+                          width={1200}
+                          height={600}
+                          className="object-contain w-full h-full rounded-lg"
+                          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 90vw, 80vw"
+                        />
+                      )}
                     </CardContent>
                   </Card>
                 </CarouselItem>
