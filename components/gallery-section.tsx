@@ -84,7 +84,7 @@ export default function GallerySection() {
                             Tu navegador no soporta el elemento de video.
                           </video>
                           {image.title && (
-                            <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-4">
+                            <div className="absolute inset-x-0 bottom-0 p-4">
                               <h3 className="text-xl font-medium text-white text-center">
                                 {image.title}
                               </h3>
