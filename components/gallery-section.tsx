@@ -14,26 +14,21 @@ import {
 import { ArrowLeft, ArrowRight } from "lucide-react"
 
 const galleryImages = [
-  { src: "/images/feature-1.jpg", alt: "Proceso de recubrimiento metálico 1" },
-  { src: "/images/feature-2.jpg", alt: "Joyería con galvanoplastia" },
-  { src: "/images/feature-3.jpg", alt: "Acabado metálico detallado" },
-  { src: "/images/feature-4.jpg", alt: "Taller de orfebrería" },
-  { src: "/images/feature-5.jpg", alt: "Equipo de recubrimiento de precisión" },
-  { src: "/images/feature-6.jpg", alt: "Galvanoplastia de piezas" },
-  { src: "/images/feature-7.jpg", alt: "Pulido de metales" },
-  { src: "/images/feature-8.jpg", alt: "Control de calidad" },
-  { src: "/images/feature-9.jpg", alt: "Baño de recubrimiento" },
-  { src: "/images/feature-10.jpg", alt: "Trabajo artesanal" },
-  { src: "/images/feature-11.jpg", alt: "Detailado de piezas" },
-  { src: "/images/feature-12.jpg", alt: "Proceso químico" },
-  { src: "/images/feature-13.jpg", alt: "Recubrimiento de joyas" },
-  { src: "/images/feature-14.jpg", alt: "Piezas en baño" },
-  { src: "/images/feature-15.jpg", alt: "Recubrimiento de componentes" },
-  { src: "/images/feature-16.jpg", alt: "Inspección de calidad" },
-  { src: "/images/feature-17.jpg", alt: "Recubrimiento especializado" },
   { src: "/images/feature-18.mp4", alt: "Proceso de recubrimiento en video", type: "video" },
-  { src: "/images/feature-19.jpg", alt: "Detalle de acabado metálico" },
-  { src: "/images/feature-20.jpg", alt: "Proceso de galvanoplastia" },
+  { src: "/images/Bronce.mp4", alt: "Recubrimiento en Bronce", type: "video", title: "Bronce" },
+  { src: "/images/Cobre.mp4", alt: "Recubrimiento en Cobre", type: "video", title: "Cobre" },
+  { src: "/images/Niquel.mp4", alt: "Recubrimiento en Níquel", type: "video", title: "Níquel" },
+  { src: "/images/Oro18k.mp4", alt: "Recubrimiento en Oro 18k", type: "video", title: "Oro 18k" },
+  { src: "/images/Oro24k.mp4", alt: "Recubrimiento en Oro 24k", type: "video", title: "Oro 24k" },
+  { src: "/images/OroRosa.mp4", alt: "Recubrimiento en Oro Rosa", type: "video", title: "Oro Rosa" },
+  { src: "/images/Plateado.mp4", alt: "Recubrimiento en Plateado", type: "video", title: "Plateado" },
+  { src: "/images/feature-1.mp4", alt: "Proceso de recubrimiento 1", type: "video" },
+  { src: "/images/feature-2.mp4", alt: "Proceso de recubrimiento 2", type: "video" },
+  { src: "/images/feature-3.mp4", alt: "Proceso de recubrimiento 3", type: "video" },
+  { src: "/images/feature-4.mp4", alt: "Proceso de recubrimiento 4", type: "video" },
+  { src: "/images/feature-5.mp4", alt: "Proceso de recubrimiento 5", type: "video" },
+  { src: "/images/feature-6.mp4", alt: "Proceso de recubrimiento 6", type: "video" },
+  { src: "/images/feature-7.mp4", alt: "Proceso de recubrimiento 7", type: "video" },
 ]
 
 export default function GallerySection() {
@@ -74,21 +69,32 @@ export default function GallerySection() {
             <CarouselContent>
               {galleryImages.map((image, index) => (
                 <CarouselItem key={index}>
-                  <Card className="bg-gray-300 border-none">
+                  <Card className="bg-gray-300 border-none relative">
                     <CardContent className="flex aspect-[16/9] sm:aspect-[2/1] items-center justify-center p-0">
                       {image.type === "video" ? (
-                        <video
-                          src={image.src}
-                          controls
-                          className="w-full h-full object-contain rounded-lg"
-                          playsInline
-                        >
-                          Tu navegador no soporta el elemento de video.
-                        </video>
+                        <>
+                          <video
+                            src={image.src}
+                            autoPlay
+                            muted
+                            loop
+                            playsInline
+                            className="w-full h-full object-contain rounded-lg pointer-events-none"
+                          >
+                            Tu navegador no soporta el elemento de video.
+                          </video>
+                          {image.title && (
+                            <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-4">
+                              <h3 className="text-xl font-medium text-white text-center">
+                                {image.title}
+                              </h3>
+                            </div>
+                          )}
+                        </>
                       ) : (
                         <Image
                           src={image.src}
-                          alt={image.alt}
+                          alt={image.alt || "Imagen de galería"}
                           width={1200}
                           height={600}
                           className="object-contain w-full h-full rounded-lg"

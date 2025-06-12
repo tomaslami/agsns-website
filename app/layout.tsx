@@ -51,9 +51,9 @@ export default function RootLayout({
           {children}
         </ThemeProvider>
         <FloatingWhatsAppButton
-          phoneNumber="+541126968368"
-          message="Hola!! Estoy interesado/a en sus servicios."
-        />
+        phoneNumber="+541126968368"
+        message="Hola!! Estoy interesado/a en sus servicios."
+      />
       </body>
     </html>
   )

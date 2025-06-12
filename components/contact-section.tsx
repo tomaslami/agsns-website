@@ -41,7 +41,7 @@ export default function ContactSection() {
     
     const formData = new FormData(form)
     setIsLoading(true)
-
+    
     try {
       const res = await handleSubmit(formData)
 
