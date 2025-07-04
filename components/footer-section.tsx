@@ -102,7 +102,11 @@ export default function Footer() {
 
         <div className="border-t border-gray-700 pt-6 sm:pt-8 text-center text-xs sm:text-sm">
           <p>&copy; {new Date().getFullYear()} Recubrimientos AGSNS. Todos los derechos reservados.</p>
-          
+          <p className="mt-1 sm:mt-2">
+            <Link href="https://synera.com.ar" className="text-[#B08D57] hover:underline">
+              Synera
+            </Link>
+          </p>
         </div>
       </div>
     </footer>
