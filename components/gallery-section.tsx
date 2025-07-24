@@ -50,17 +50,19 @@ export default function GallerySection() {
   }, [api])
 
   return (
-    <section id="galeria" className="py-10 sm:py-14 md:py-16 lg:py-20 xl:py-24 bg-[#2C2A29] text-white">
+    <section id="productos" className="py-10 sm:py-14 md:py-16 lg:py-20 xl:py-24 bg-[#2C2A29] text-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
         <div className="text-left mb-6 sm:mb-8 lg:mb-12">
           <span className="inline-block bg-[#B08D57] text-white text-xs sm:text-sm font-semibold px-3 sm:px-4 py-1 sm:py-2 rounded-full mb-2 sm:mb-3">
-            Galería
+            Productos
           </span>
           <h2 className="text-3xl font-medium  mb-2">
-            Nuestro <span className="text-[#B08D57]">trabajo</span> en acción
+          Recubrimientos reales.
+          <span className="text-[#B08D57]"> Resultados reales.</span> 
           </h2>
           <p className="text-sm sm:text-base lg:text-lg  mt-2 sm:mt-3 max-w-3xl">
-            Procesos, resultados y conocimiento compartido
+          Conocé cómo trabajan nuestros clientes con los insumos de AGSNS. En esta galería vas a encontrar ejemplos de baños metálicos aplicados sobre piezas artesanales: anillos, dijes, pulseras, medallas, broches y mucho más.
+
           </p>
         </div>
 

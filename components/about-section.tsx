@@ -6,7 +6,7 @@ const services = [
   {
     title: "Sobre nosotros",
     description:
-      "Recubrimientos metálicos agsns nace en el 2010 ofreciendo una variedad de productos de bañados galvánicos diseñados para satisfacer las necesidades de pequeñas empresas y talleres que buscan agregar valor y durabilidad a sus productos. Nuestras formulaciones están para proporcionar resultados óptimos y consistentes en una variedad de aplicaciones.",
+      "Somos una empresa argentina dedicada a la distribución de insumos y herramientas para galvanoplastia. Trabajamos con talleres, joyeros independientes, orfebres y emprendedores de todo el país, brindando productos de calidad y acompañamiento personalizado. Desde fuentes de corriente hasta baños electrolíticos listos para usar, nuestro compromiso es ayudarte a lograr recubrimientos metálicos de excelencia en cada pieza que creás",
     icon: "/icons/Users.png",
   },
   {
@@ -44,11 +44,13 @@ export default function ServicesSection() {
           </span>
 
           <h2 className="text-3xl font-medium text-[#252320] mb-2">
-            Excelencia en <span className="text-[#B08D57]">recubrimientos metálicos</span>
+          Más de 15 años junto a {" "}
+          <span className="text-[#B08D57]">joyeros y artesanos</span>
           </h2>
 
           <p className="text-base text-gray-700">
-            Soluciones técnicas especializadas para el sector joyero y talleres artesanales
+            Trabajamos con talleres, joyeros independientes, orfebres y emprendedores de todo el país, brindando productos de calidad y acompañamiento personalizado.
+
           </p>
         </div>
 

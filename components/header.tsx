@@ -41,10 +41,10 @@ export default function Header() {
             Sobre Nosotros
           </Link>
           <Link
-            href="#galeria"
+            href="#productos"
             className="text-sm xl:text-base font-medium text-white hover:text-gray-300 transition-colors"
           >
-            Galería
+            Productos
           </Link>
           <Button
             variant="default"
