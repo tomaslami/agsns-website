@@ -5,8 +5,8 @@ import FloatingWhatsAppButton from "@/components/floating-whatsapp-button"
 import Script from "next/script"
 
 export const metadata = {
-  title: "AGSNS - Recubrimientos Metálicos",
-  description: "Recubrimientos de precisión para joyeros exigentes",
+  title: "AGSNS",
+  description: "Kits completos, químicos de calidad, y asesoramiento experto para joyeros, orfebres y artesanos que buscan acabados metálicos duraderos y de alto brillo.",
 }
 
 export default function RootLayout({
